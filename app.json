@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fintech",
-    "slug": "fintech",
+    "name": "Fintech-App",
+    "slug": "Fintech-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,54 +12,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.galaxies.fintech"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.supersimon.fintech"
+      }
     },
     "web": {
       "bundler": "metro",
-      "output": "server",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://galaxies.dev"
-        }
-      ],
-      "expo-secure-store",
-      [
-        "expo-local-authentication",
-        {
-          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
-        }
-      ],
-      [
-        "expo-dynamic-app-icon",
-        {
-          "default": {
-            "image": "./assets/images/icon.png",
-            "prerendered": true
-          },
-          "dark": {
-            "image": "./assets/images/icon-dark.png",
-            "prerendered": true
-          },
-          "vivid": {
-            "image": "./assets/images/icon-vivid.png",
-            "prerendered": true
-          }
-        }
-      ]
+      "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
