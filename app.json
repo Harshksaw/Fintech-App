@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Fintech-App",
-    "slug": "Fintech-App",
+    "name": "fintech",
+    "slug": "fintech",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -17,14 +17,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.harsh10021.FintechApp"
+      "bundleIdentifier": "com.supersimon.fintech"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.harsh10021.FintechApp"
+      "package": "com.supersimon.fintech"
     },
     "web": {
       "bundler": "metro",
@@ -32,8 +32,7 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
-      "expo-font"
+      "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
