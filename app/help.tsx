@@ -1,25 +1,9 @@
-
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-
-const App = () => {
+import { View, Text } from 'react-native';
+const Page = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to your React Native page!</Text>
+    <View>
+      <Text>Help</Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
-
-export default App;
+export default Page;

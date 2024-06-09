@@ -1,40 +1,42 @@
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Video, ResizeMode } from 'expo-av';
+import { useAssets } from 'expo-asset';
+import { Link } from 'expo-router';
 import Colors from '@/constants/Colors';
 import { defaultStyles } from '@/constants/Styles';
-import { useAssets } from 'expo-asset';
-import { ResizeMode, Video } from 'expo-av';
-import { Link } from 'expo-router';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
 const Page = () => {
-  const [assets] = useAssets([require('@/assets/videos/intro.mp4')]);
-
+  const [assets] = useAssets([require('../assets/videos/intro.mp4')]);
+  console.log(assets);
   return (
     <View style={styles.container}>
-      {assets && (
+      {/* {assets && ( */}
         <Video
-          resizeMode={ResizeMode.COVER}
-          isMuted
-          isLooping
-          shouldPlay
-          source={{ uri: assets[0].uri }}
           style={styles.video}
+          source={{
+            uri: 'https://hzdxark-harsh10021-8081.exp.direct/assets/?unstable_path=.%2Fassets%2Fvideos%2Fintro.mp4&platform=android&hash=5060844c332c532be0c8e4bad4b51cc0',
+          }}
+          isMuted
+          shouldPlay
+          resizeMode={ResizeMode.COVER}
+          isLooping
         />
-      )}
+ {/* )} */}
       <View style={{ marginTop: 80, padding: 20 }}>
         <Text style={styles.header}>Ready to change the way you money?</Text>
       </View>
 
       <View style={styles.buttons}>
         <Link
-          href={'/login'}
+          href="/login"
           style={[defaultStyles.pillButton, { flex: 1, backgroundColor: Colors.dark }]}
           asChild>
           <TouchableOpacity>
-            <Text style={{ color: 'white', fontSize: 22, fontWeight: '500' }}>Log in</Text>
+            <Text style={{ color: '#fff', fontSize: 22, fontWeight: '500' }}>Log in</Text>
           </TouchableOpacity>
         </Link>
         <Link
-          href={'/signup'}
+          href="/signup"
           style={[defaultStyles.pillButton, { flex: 1, backgroundColor: '#fff' }]}
           asChild>
           <TouchableOpacity>
@@ -48,20 +50,20 @@ const Page = () => {
 
 const styles = StyleSheet.create({
   container: {
-
     flex: 1,
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
   },
   video: {
+
+    position: 'absolute',
     width: '100%',
     height: '100%',
-    position: 'absolute',
   },
   header: {
     fontSize: 36,
     fontWeight: '900',
     textTransform: 'uppercase',
-    color: 'white',
+    color: '#fff',
   },
   buttons: {
     flexDirection: 'row',
