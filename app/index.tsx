@@ -7,21 +7,21 @@ import { defaultStyles } from '@/constants/Styles';
 
 const Page = () => {
   const [assets] = useAssets([require('../assets/videos/intro.mp4')]);
-  console.log(assets);
+
   return (
     <View style={styles.container}>
-      {/* {assets && ( */}
+      {assets && (
         <Video
           style={styles.video}
           source={{
-            uri: 'https://hzdxark-harsh10021-8081.exp.direct/assets/?unstable_path=.%2Fassets%2Fvideos%2Fintro.mp4&platform=android&hash=5060844c332c532be0c8e4bad4b51cc0',
+            uri: assets[0].localUri,
           }}
           isMuted
           shouldPlay
           resizeMode={ResizeMode.COVER}
           isLooping
         />
- {/* )} */}
+         )} 
       <View style={{ marginTop: 80, padding: 20 }}>
         <Text style={styles.header}>Ready to change the way you money?</Text>
       </View>
@@ -51,7 +51,7 @@ const Page = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: 'space-between',
+    justifyContent: 'space-between',
   },
   video: {
 
