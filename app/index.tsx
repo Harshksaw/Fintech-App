@@ -32,12 +32,12 @@ const Page = () => {
           style={[defaultStyles.pillButton, { flex: 1, backgroundColor: Colors.dark }]}
           asChild>
           <TouchableOpacity>
-            <Text style={{ color: '#fff', fontSize: 22, fontWeight: '500' }}>Log in</Text>
+            <Text style={{ color: '#f23', fontSize: 22, fontWeight: '500' }}>Log in</Text>
           </TouchableOpacity>
         </Link>
         <Link
           href="/signup"
-          style={[defaultStyles.pillButton, { flex: 1, backgroundColor: '#fff' }]}
+          style={[defaultStyles.pillButton, { flex: 1, backgroundColor: '#f12' }]}
           asChild>
           <TouchableOpacity>
             <Text style={{ fontSize: 22, fontWeight: '500' }}>Sign up</Text>

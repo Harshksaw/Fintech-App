@@ -47,7 +47,7 @@ const RootLayoutNav = () => {
       // <StatusBar style="light" />
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
-{/* 
+
         <Stack.Screen
           name="signup"
           options={{
@@ -87,10 +87,10 @@ const RootLayoutNav = () => {
               </Link>
             ),
           }}
-        /> */}
-        {/* <Stack.Screen name="help" options={{ title: 'Help', presentation: 'modal' }} /> */}
+        /> 
+        <Stack.Screen name="help" options={{ title: 'Help', presentation: 'modal' }} />
 
-        {/* <Stack.Screen
+ <Stack.Screen
           name="verify/[phone]"
           options={{
             title: '',
@@ -105,7 +105,7 @@ const RootLayoutNav = () => {
               </TouchableOpacity>
             ),
           }}
-        /> */}
+        />
       </Stack>
     // </ClerkProvider>
   );
