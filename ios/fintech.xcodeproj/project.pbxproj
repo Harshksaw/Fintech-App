@@ -14,7 +14,7 @@
 		96905EF65AED1B983A6B3ABC /* libPods-fintech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-fintech.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		45A7E415B4D84D42ACDB3688 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31D572E6684550BB25DF50 /* noop-file.swift */; };
+		F4AB7E5235504159908ABBEC /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0100FDD2DC284E418F3D7954 /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +31,8 @@
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-fintech/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		FC31D572E6684550BB25DF50 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "fintech/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
-		7B96869030714C87A387FBDC /* fintech-Bridging-Header.h */ = {isa = PBXFileReference; name = "fintech-Bridging-Header.h"; path = "fintech/fintech-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0100FDD2DC284E418F3D7954 /* noop-file.swift */ = {isa = PBXFileReference; name = "noop-file.swift"; path = "fintech/noop-file.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		C2990F90E67043B2956981C8 /* fintech-Bridging-Header.h */ = {isa = PBXFileReference; name = "fintech-Bridging-Header.h"; path = "fintech/fintech-Bridging-Header.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				FC31D572E6684550BB25DF50 /* noop-file.swift */,
-				7B96869030714C87A387FBDC /* fintech-Bridging-Header.h */,
+				0100FDD2DC284E418F3D7954 /* noop-file.swift */,
+				C2990F90E67043B2956981C8 /* fintech-Bridging-Header.h */,
+				B97B3A4722E14F2E8031EA3B /* DynamicAppIcons */,
 			);
 			name = fintech;
 			sourceTree = "<group>";
@@ -136,6 +137,14 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
+		B97B3A4722E14F2E8031EA3B /* DynamicAppIcons */ = {
+			isa = "PBXGroup";
+			children = (
+			);
+			name = DynamicAppIcons;
+			sourceTree = "<group>";
+			path = "";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,7 +207,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				E0F0F35C22E84BA2A34C1E10 /* fintech-Bridging-Header.h in Resources */,
+				2495C6F9B2A9412E883B35CF /* fintech-Bridging-Header.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +283,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				45A7E415B4D84D42ACDB3688 /* noop-file.swift in Sources */,
+				F4AB7E5235504159908ABBEC /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +475,9 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
